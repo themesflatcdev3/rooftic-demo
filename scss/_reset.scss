@@ -580,26 +580,6 @@ h4,
     font-weight: 500;
 }
 
-h5,
-.h5 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
-}
-
-h6,
-.h6 {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 500;
-}
-
-.text-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-}
-
 .text-body-default {
     font-size: 16px;
     line-height: 28px;
@@ -610,55 +590,11 @@ h6,
     line-height: 30px;
 }
 
-.text-body-2 {
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.text-body-3 {
-    font-size: 34px;
-    line-height: 44px;
-}
-
-.text-button {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-}
-
-.text-button-small {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 600;
-}
-
-.text-label {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
-}
-
-.text-caption-1 {
-    font-size: 14px;
-    line-height: 22px;
-}
-
-.text-caption-2 {
-    font-size: 12px;
-    line-height: 16px;
-}
-
 @include res(xl) {
     h1,
     .h1 {
         font-size: 80px;
         line-height: 88px;
-    }
-
-    h2,
-    .h2 {
-        font-size: 52px;
-        line-height: 62px;
     }
 }
 
@@ -674,15 +610,6 @@ h6,
         font-size: 43px;
         line-height: 51px;
     }
-    h3,
-    .h3 {
-        font-size: 36px;
-        line-height: 44px;
-    }
-    .text-body-3 {
-        font-size: 28px;
-        line-height: 36px;
-    }
 }
 
 @include res(md) {
@@ -696,20 +623,6 @@ h6,
     .h2 {
         font-size: 35px;
         line-height: 43px;
-    }
-    h3,
-    .h3 {
-        font-size: 30px;
-        line-height: 38px;
-    }
-    h4,
-    .h4 {
-        font-size: 25px;
-        line-height: 33px;
-    }
-    .text-body-3 {
-        font-size: 23px;
-        line-height: 31px;
     }
 }
 
@@ -725,44 +638,14 @@ h6,
         font-size: 30px;
         line-height: 38px;
     }
-    h3,
-    .h3 {
-        font-size: 25px;
-        line-height: 33px;
-    }
+}
 
-    h4,
-    .h4 {
-        font-size: 22px;
-        line-height: 30px;
-    }
-    h5,
-    .h5 {
-        font-size: 20px;
-        line-height: 28px;
-    }
+.font-Manrope {
+    font-family: $font-main !important;
+}
 
-    h6,
-    .h6 {
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .text-body-1 {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .text-button {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .text-body-2 {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .text-body-default {
-        font-size: 14px;
-        line-height: 24px;
-    }
+.font-Inter-Tight {
+    font-family: $font-Inter-Tight !important;
 }
 
 // font-weight
@@ -906,7 +789,7 @@ a {
 
 .tf-container {
     position: relative;
-    max-width: 1440px;
+    max-width: 1320px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -915,8 +798,11 @@ a {
     &.full {
         max-width: 100%;
     }
-    &.w-1770 {
-        max-width: 1800px;
+    &.w-1880 {
+        max-width: 1910px;
+    }
+    &.w-1780 {
+        max-width: 1810px;
     }
 }
 

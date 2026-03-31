@@ -3,59 +3,29 @@
 /* top-bar
 ============================================================================*/
 .top-bar {
-    .top-bar-inner {
-        padding: 34px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    .left {
         display: flex;
+        gap: 47px;
         align-items: center;
-        justify-content: space-between;
     }
-    .info {
+    .right {
         display: flex;
-        gap: 57px;
-    }
-    .icon {
-        display: flex;
-        height: 52px;
-        width: 52px;
-        border-radius: 50%;
-        background-color: var(--Bg-light);
-        display: flex;
-        justify-content: center;
+        gap: 50px;
         align-items: center;
-        font-size: 28px;
-        color: var(--Text-primary);
-    }
-    .social {
-        gap: 28px;
-        a {
-            font-size: 28px;
-            &:hover {
-                color: var(--Primary);
-            }
-        }
-    }
-    @include res(xxl) {
-        .info {
-            gap: 20px;
-        }
-        .social {
-            gap: 12px;
-        }
-        .icon {
-            height: 48px;
-            width: 48px;
+        .slash {
+            display: flex;
+            width: 1px;
+            height: 40px;
+            background-color: #00081412;
+            transform: rotate(10deg);
         }
     }
     @include res(xl) {
-        .info {
-            display: none !important;
-        }
-        .top-bar-inner {
-            justify-content: center;
-        }
-        .top-bar-inner {
-            padding: 18px 0;
-        }
+        
     }
 }
 
@@ -68,18 +38,21 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0;
         gap: 30px;
+        padding: 0px 30px;
+        background-color: #F61E2608;
+        border: 1px solid #00081412;
+        border-radius: 20px;
     }
     .site-logo {
         @include res(xxxl, min) {
-            min-width: 378px;
+            // min-width: 378px;
         } 
     }
     .header-right {
         display: flex;
         align-items: center;
-        gap: 28px;
+        gap: 40px;
         padding: 20px 0;
         .hot-line {
             display: flex;

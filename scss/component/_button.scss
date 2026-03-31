@@ -5,32 +5,33 @@
     align-items: center;
     gap: 8px;
     width: max-content;
-    padding: 12px 20px;
-    background-color: var(--Primary);
+    padding: 14.5px 30px;
+    background-color: var(--Red);
     @include transition3();
-    border-radius: 999px;
+    border-radius: 14px;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    font-family: $font-Inter-Tight;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 19px;
     font-weight: 600;
     span {
-        color: var(--Text-light);
+        color: var(--White);
         @include transition3();
         white-space: nowrap;
         display: flex;
     }
     i {
-        font-size: 24px;
-        color: var(--Text-light);
+        font-size: 20px;
+        color: var(--White);
     }
     .bg-effect {
         position: absolute;
         width: 0;
         height: 0;
         border-radius: 50%;
-        background-color: var(--Text-primary);
+        background-color: var(--Black);
         transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
         transform: translate(-50%, -50%);
         z-index: -1;

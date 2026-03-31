@@ -25,6 +25,26 @@
 (function ($) {
     ("use strict");
 
+    /* Select Image
+    -------------------------------------------------------------------------------------*/
+    var selectImages = function () {
+        if ($(".image-select").length > 0) {
+        const selectIMG = $(".image-select");
+
+        selectIMG.find("option").each((idx, elem) => {
+            const selectOption = $(elem);
+            const imgURL = selectOption.attr("data-thumbnail");
+            if (imgURL) {
+            selectOption.attr(
+                "data-content",
+                `<img src="${imgURL}" /> ${selectOption.text()}`
+            );
+            }
+        });
+        selectIMG.selectpicker();
+        }
+    };
+
     /* preventDefault
     -------------------------------------------------------------------------*/
     const preventDefault = () => {
@@ -319,6 +339,7 @@
 
     // Dom Ready
     $(function () {
+        selectImages();
         check_map();
         preventDefault();
         headerFixed();
