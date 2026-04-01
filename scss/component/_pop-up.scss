@@ -1,36 +1,5 @@
 @use "../abstracts/index" as *;
 
-.popup-property {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px;
-    background-color: var(--White);
-    border-radius: 16px;
-    .img-style {
-        border-radius: 4px;
-        overflow: hidden;
-    }
-    .info {
-        gap: 24px;
-        li {
-            font-size: 14px;
-            line-height: 23px;
-        }
-        i {
-            font-size: 20px;
-            color: var(--Text-secondary);
-        }
-    }
-    @include res(md) {
-        padding: 10px;
-        gap: 10px;
-        .info {
-            gap: 7px;
-        }
-    }
-}
-
 .modal {
     z-index: 999999;
     .title-box {

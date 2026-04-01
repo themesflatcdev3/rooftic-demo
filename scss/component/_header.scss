@@ -49,25 +49,22 @@
             // min-width: 378px;
         } 
     }
+    .main-menu {
+        flex-grow: 1;
+    }
     .header-right {
         display: flex;
         align-items: center;
+        justify-content: end;
         gap: 40px;
         padding: 20px 0;
-        .hot-line {
-            display: flex;
-            gap: 16px;
-            .icon {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background-color: var(--Bg-light);
-                width: 48px;
-                height: 48px;
-                font-size: 28px;
-                color: var(--Text-primary);
-            }
+        flex-grow: 1;
+        .header-call {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            font-family: $font-Inter-Tight;
+            color: var(--Title);
         }
     }
     &.style-default {

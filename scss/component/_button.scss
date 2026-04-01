@@ -118,3 +118,28 @@
         line-height: 22px;
     }
 }
+
+.tf-btn-1 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--Paragraph);
+    span {
+        position: relative;
+        display: inline-block;
+        font-family: $font-Inter-Tight;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: underline;
+    }
+    .icon {
+        font-size: 19px;
+    }
+    &:hover {
+        color: var(--Red);
+        .icon {
+            animation: link-icon 0.3s linear;
+        }
+    }
+}

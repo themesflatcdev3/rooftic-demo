@@ -546,7 +546,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: $font-main;
+    font-family: $font-Inter-Tight;
     margin: 0;
     text-rendering: optimizeLegibility;
     color: var(--Black);
@@ -563,21 +563,21 @@ h2,
 .h2 {
     font-size: 48px;
     line-height: 55px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h3,
 .h3 {
     font-size: 24px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h4,
 .h4 {
     font-size: 22px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .text-body-default {
@@ -671,7 +671,7 @@ h4,
 .link {
     @include transition3;
     &:hover {
-        color: var(--Primary) !important;
+        color: var(--Red) !important;
     }
 }
 
@@ -690,32 +690,26 @@ a {
 
 /* text color
 -------------------------------------------------------------- */
+.text-Red {
+    color: var(--Red) !important;
+}
 .text-Black {
     color: var(--Black) !important;
+}
+.text-Gray {
+    color: var(--Gray) !important;
 }
 .text-White {
     color: var(--White) !important;
 }
-.text-Primary {
-    color: var(--Primary) !important;
-}
-.text-cl-primary {
-    color: var(--Text-primary) !important;
-}
-.text-secondary {
-    color: var(--Text-secondary) !important;
+.text-Title {
+    color: var(--Title) !important;
 }
 .text-Line {
     color: var(--Line) !important;
 }
-.text-muted {
-    color: var(--Text-muted) !important;
-}
-.text-light {
-    color: var(--Text-light) !important;
-}
-.text-Bg-light {
-    color: var(--Bg-light) !important;
+.text-Paragraph {
+    color: var(--Paragraph) !important;
 }
 // font
 
@@ -1189,8 +1183,8 @@ a {
 /* spacing-section
 -------------------------------------------------------------- */
 .tf-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
 
 @include res(lg) {
