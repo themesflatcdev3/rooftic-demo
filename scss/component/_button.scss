@@ -36,64 +36,23 @@
         transform: translate(-50%, -50%);
         z-index: -1;
     }
-    &.btn-bg-1 {
-        background-color: var(--Text-primary);
-        span {
-            color: var(--White);
-        }
-        .bg-effect {
-            background-color: var(--Primary);
-        }
-        &:hover {
-            background-color: var(--Primary);
-            span {
-                color: var(--Text-primary) !important;
-            }
-        }
-    }
     &.btn-bg-white {
         background-color: var(--White);
         span {
-            color: var(--Text-primary);
+            color: var(--Title);
         }
         .bg-effect {
-            background-color: var(--Primary);
+            background-color: var(--Title);
         }
         &:hover {
-            background-color: var(--Primary);
+            background-color: var(--Title);
             span {
-                // color: var(--Text-primary) !important;
                 color: var(--White) !important;
             }
         }
     }
-    &.btn-border {
-        background-color: transparent;
-        border: 1px solid var(--Line);
-        span {
-            color: var(--Text-primary);
-        }
-        .bg-effect {
-            background-color: var(--Primary);
-        }
-        &:hover {
-            background-color: var(--Primary);
-            border-color: var(--Primary);
-            span {
-                color: var(--White);
-            }
-        }
-    }
     &.btn-px-12 {
-        padding: 0 12px;
-    }
-    &.btn-px-32 {
-        padding-right: 32px;
-        padding-left: 32px;
-    }
-    &.btn-px-28 {
-        padding-right: 28px;
-        padding-left: 28px;
+        // padding: 0 12px;
     }
     &:hover {
         transition-delay: 0.15s;

@@ -255,6 +255,39 @@ form.form-search-siderbar {
             border-radius: 4px;
         }
     }
+    .sidebar-banner {
+        position: relative;
+        background-color: var(--Red);
+        border-radius: 14px;
+        padding: 40px 40px 240px;
+        overflow: hidden;
+        .image {
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .title {
+            font-family: $font-Inter-Tight;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 50px;
+            color: var(--White);
+            margin-bottom: 15px;
+
+        }
+        .text {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--White);
+            margin-bottom: 30px;
+        }
+    }
 }
 
 

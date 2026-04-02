@@ -3,26 +3,53 @@
 .page-title {
     position: relative;
     padding-top: 20px;
-    &.style-inner {
-        .wrap {
-            padding: 308px 15px 130px;
-            border-radius: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-        .image {
-            position: absolute;
-            inset: 0;
-            z-index: -1;
-        }
-        .content {
-            max-width: 1540px;
-            margin-left: auto;
-            margin-right: auto;
+    .wrap {
+        padding: 308px 15px 130px;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .image {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+    .content {
+        max-width: 1540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title {
+        color: var(--White);
+        margin-bottom: 20px;
+    }
+    &.style-details {
+        .breadcrumb {
+            margin-bottom: 20px;
         }
         .title {
-            color: var(--White);
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        .list-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0;
+            .dot {
+                display: flex;
+                width: 5px;
+                height: 5px;
+                transform: rotate(45deg);
+                border-radius: 50%;
+                background-color: var(--White);
+            }
+            li {
+                color: var(--White);
+                &:last-child {
+                    text-decoration: underline;
+                }
+            }
         }
     }
     @include res(lg) {
