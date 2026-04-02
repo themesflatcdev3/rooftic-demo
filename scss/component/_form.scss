@@ -156,11 +156,18 @@ input.tf-check {
 }
 
 .leave-comment {
-    background-color: var(--Bg-light);
+    background-color: #F61E2608;
     border-radius: 8px;
     padding: 32px;
     .tf-grid-layout {
         gap: 20px;
+    }
+    .title {
+        margin-bottom: 8px;
+    }
+    .sub {
+        margin-bottom: 28px;
+        color: var(--Paragraph);
     }
     @include res(md) {
        padding: 24px 15px;
