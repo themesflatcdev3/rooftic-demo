@@ -1401,3 +1401,9 @@ a {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.text-gradient-1 {
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #FFFFFF1A;
+    -webkit-text-fill-color: transparent;
+}

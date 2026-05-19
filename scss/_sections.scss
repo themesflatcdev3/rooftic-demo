@@ -393,3 +393,73 @@
         padding-right: 30px;
     }
 }
+
+
+
+
+.hero-section {
+    position: relative;
+    background-color: var(--Black);
+    display: flex;
+    align-items: center;
+    padding: 67px 100px 0;
+    >.text-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-weight: 600;
+        font-size: 300px;
+        line-height: 300px;
+        letter-spacing: -0.03em;
+        z-index: 1;
+    }
+    >.img-bg {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+    }
+    >.left {
+        position: relative;
+        width: 45%;
+        z-index: 2;
+        padding-right: 41px;
+        .title {
+            font-weight: $font-Inter-Tight;
+            font-weight: 600;
+            font-size: 90px;
+            line-height: 90px;
+            margin-bottom: 50px;
+            color: var(--White);
+        }
+        .desc {
+            font-family: Manrope;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 35px;
+            color: #FFFFFFCC;
+            margin-bottom: 50px;
+        }
+    }
+    >.center {
+        position: relative;
+        width: 520px;
+        z-index: 2;
+    }
+    >.right {
+        position: relative;
+        width: 30%;
+        z-index: 2;
+        margin-left: 80px;
+        .form-booking {
+            padding: 40px;
+            border: 1px solid #FFFFFF1A;
+            border-radius: 14px;
+            background: #08101B;
+            .text {
+                font-weight: $font-Inter-Tight;
+                color: var(--White);
+            }
+        }
+    }
+}

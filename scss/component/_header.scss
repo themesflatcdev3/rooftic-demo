@@ -7,9 +7,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
     .left {
         display: flex;
-        gap: 47px;
+        gap: 20px 47px ;
+        flex-wrap: wrap;
         align-items: center;
     }
     .right {
@@ -228,7 +231,7 @@
             gap: 30px;
         }
     }
-    @include res(xl) {
+    @include res(xxl) {
         display: none;
     }
 }

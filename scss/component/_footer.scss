@@ -141,10 +141,19 @@
 
 
     
-    @include res(lg) {
-        
+    @include res(xl) {
+        .footer-cta,
+        .footer-contact,
+        .footer-content,
+        .footer-logo {
+            width: 100%;
+            padding: 30px 0;
+        }
     }
-    @include res(sm) {
-       
+    @include res(md) {
+        .footer-contact .wrap {
+            grid-template-columns:  1fr;
+            gap: 30px;
+        }
     }
 }

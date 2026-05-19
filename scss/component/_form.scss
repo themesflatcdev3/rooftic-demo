@@ -179,7 +179,7 @@ input.tf-check {
         padding-left: 28px;
         cursor: pointer;
         position: relative;
-        color: var(--Text-primary);
+        color: var(--Black);
         input {
             position: absolute;
             opacity: 0;
@@ -188,15 +188,15 @@ input.tf-check {
             z-index: 1;
             &:checked {
                 ~ .btn-checkbox {
-                    border: 1px solid var(--Text-primary);
-                    background-color: var(--Text-primary);
+                    border: 1px solid var(--Black);
+                    background-color: var(--Black);
                     &:after {
                         display: block;
                     }
                     &.style-radio {
                         background: unset;
                         &::after {
-                            background-color: var(--Text-primary);
+                            background-color: var(--Black);
                         }
                     }
                 }
@@ -211,7 +211,8 @@ input.tf-check {
             height: 15px;
             background-color: transparent;
             border-radius: 2px;
-            border: 1px solid var(--Text-secondary);
+            border: 1px solid var(--Black);
+            border-radius: 50%;
             &:after {
                 content: "\e938";
                 font-family: $fontIcon !important;
@@ -222,24 +223,8 @@ input.tf-check {
                 top: 1px;
                 left: 1px;
                 color: var(--White);
-                display: none;
-            }
-            &.style-radio {
-                width: 16px;
-                height: 16px;
                 border-radius: 50%;
-                &::after {
-                    display: block;
-                    content: '';
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    width: 9px;
-                    height: 9px;
-                    border-radius: 50%;
-                    background-color: transparent;
-                    @include transition3;
-                }
+                display: none;
             }
         }
     }
