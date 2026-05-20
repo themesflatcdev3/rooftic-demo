@@ -176,3 +176,16 @@
         @include transition-cubic-2();
     }
 }
+
+.rotate360 {
+    animation: rotate360 7s infinite linear;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

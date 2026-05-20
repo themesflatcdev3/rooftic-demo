@@ -26,11 +26,12 @@
     }
 }
 
-.icon-close {
+.btn-close-menu {
+    font-size: 20px;
     cursor: pointer;
     @include transition3;
     &:hover {
-        color: var(--Primary);
+        color: var(--Black);
     }
 }
 

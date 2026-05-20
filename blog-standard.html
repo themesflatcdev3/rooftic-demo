@@ -185,7 +185,7 @@
                             </svg>
                             Call : +1 (555) 987-6543
                         </a>
-                        <a href="#" class="d-xxl-flex d-none">
+                        <a href="#" class="d-xxl-flex d-none" data-bs-toggle="offcanvas" data-bs-target="#canvas" aria-controls="canvas">
                             <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M30 20H0V18H30V20ZM30 11H0V9H30V11ZM30 2H0V0H30V2Z" fill="#000814"/>
                             </svg>
@@ -602,7 +602,7 @@
                             </div>
                         </div>
                         <a href="index.html" class="footer-logo">
-                            <img src="images/logo/logo-1.svg" alt="logo" class="main-logo">
+                            <img src="images/logo/logo-ft.svg" alt="logo" class="main-logo">
                         </a>
                     </div>
                 </div>
@@ -640,6 +640,105 @@
         </div>
     </div>
     <!-- End prograss -->
+
+    <!-- canvas -->
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="canvas" >
+        <div class="offcanvas-header top-nav-mobile justify-content-end">
+            <div data-bs-dismiss="offcanvas" class="btn-close-menu d-flex">
+                <i class="icon-close"></i>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mb-body">
+                <div class="tf-sidebar">
+                    <div class="sidebar-item sidebar-search">
+                        <div class="h3 sidebar-title">Search</div>
+                        <form action="#" class="form-search">
+                            <fieldset>
+                                <input class="" type="text" placeholder="Search..." name="text" tabindex="2"
+                                    value=""  required>
+                            </fieldset>
+                            <button type="submit" class="button-submit">
+                                <i class="icon-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="sidebar-item sidebar-categories ">
+                        <div class="h3 sidebar-title">Categories</div>
+                        <ul class="list-categories">
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a href="blog-grid.html" class="hover-line-text">Roof Installation</a>
+                                <i class="icon icon-chevrons-right"></i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a href="blog-grid.html" class="hover-line-text">Roof Repair & Restoration</a>
+                                <i class="icon icon-chevrons-right"></i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a href="blog-grid.html" class="hover-line-text">Gutter Installation & Maintenance</a>
+                                <i class="icon icon-chevrons-right"></i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a href="blog-grid.html" class="hover-line-text">Leak Detection & Repair</a>
+                                <i class="icon icon-chevrons-right"></i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a href="blog-grid.html" class="hover-line-text">Shingle Roofing Services</a>
+                                <i class="icon icon-chevrons-right"></i>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-between">
+                                <a href="blog-grid.html" class="hover-line-text">Metal Roofing Installation</a>
+                                <i class="icon icon-chevrons-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-item sidebar-recent-post">
+                        <div class="h3 sidebar-title">Recent Posts</div>
+                        <ul class="list-recent">
+                            <li class="recent-post hover-image-rotate">
+                                <a href="blog-details.html" class="img-style">
+                                    <img src="images/blog/recent-post-1.jpg" alt="recent-post">
+                                </a>
+                                <div class="content">
+                                    <a class="sub link" href="blog-grid.html">10 February 2026</a>
+                                    <a href="blog-details.html" class="title link">How to Choose Right Roofing Material</a>
+                                </div>
+                            </li>
+                            <li class="recent-post hover-image-rotate">
+                                <a href="blog-details.html" class="img-style">
+                                    <img src="images/blog/recent-post-2.jpg" alt="recent-post">
+                                </a>
+                                <div class="content">
+                                    <a class="sub link" href="blog-grid.html">10 February 2026</a>
+                                    <a href="blog-details.html" class="title link">Choose Right Roofing Material vs Best</a>
+                                </div>
+                            </li>
+                            <li class="recent-post hover-image-rotate">
+                                <a href="blog-details.html" class="img-style">
+                                    <img src="images/blog/recent-post-3.jpg" alt="recent-post">
+                                </a>
+                                <div class="content">
+                                    <a class="sub link" href="blog-grid.html">10 February 2026</a>
+                                    <a href="blog-details.html" class="title link">How to Choose the Right Roofing</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-item sidebar-tags ">
+                        <div class="h3 sidebar-title">Popular Tags</div>
+                        <ul class="tags-list">
+                            <li><a href="blog-grid.html" class="tags-item">Roofing</a></li>
+                            <li><a href="blog-grid.html" class="tags-item">Installation</a></li>
+                            <li><a href="blog-grid.html" class="tags-item">Repair</a></li>
+                            <li><a href="blog-grid.html" class="tags-item">Top Roof</a></li>
+                            <li><a href="blog-grid.html" class="tags-item">Metal Roof</a></li>
+                            <li><a href="blog-grid.html" class="tags-item">Direction</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /canvas -->
 
     <!-- mobile-nav -->
     <div class="offcanvas offcanvas-end mobile-nav-wrap " tabindex="-1" id="menu-mobile" >

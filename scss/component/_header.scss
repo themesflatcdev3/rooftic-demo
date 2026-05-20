@@ -28,7 +28,10 @@
         }
     }
     @include res(xl) {
-        
+        .right,
+        .left {
+            gap: 15px ;
+        }
     }
 }
 
@@ -429,7 +432,7 @@
         -o-transition: all 300ms ease;
         background-color: var(--White);
         box-shadow: 0px 10px 25px 0px #485f771a;
-        border: 1px solid var(--Line);
+        border: 1px solid #00081412;
         li {
             opacity: 0;
             transform: translateY(11px);
@@ -443,18 +446,18 @@
     .submenu {
         li {
             &:not(:last-child) {
-                border-bottom: 1px solid var(--Line);
+                border-bottom: 1px solid #00081412;
             }
             a {
                 display: inline-block;
                 width: 100%;
                 padding: 16px 24px;
-                color: var(--Text-secondary);
+                color: var(--Black);
             }
             &.current-item,
             &:hover {
                 > a {
-                    color: var(--Text-primary);
+                    color: var(--Red);
                 }
             }
             &:hover {

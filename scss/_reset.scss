@@ -1407,3 +1407,10 @@ a {
     -webkit-text-stroke: 1px #FFFFFF1A;
     -webkit-text-fill-color: transparent;
 }
+
+.link-Red {
+    @include transition3();
+    &:hover {
+        color: var(--Red) !important;
+    }
+}
