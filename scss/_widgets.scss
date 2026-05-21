@@ -32,12 +32,11 @@
     .infiniteslide {
         display: flex;
         align-items: center;
-    }
-    &.style-1 {
-        padding: 40px 0 39px;
-        border-bottom: 1px solid #00081412;
-        .infiniteslide {
-            gap: 70px;
+        &.style-1 {
+            gap: 100px;
+        }
+        &.style-2 {
+            gap: 100px;
         }
     }
 }
@@ -97,6 +96,18 @@
     &.text-center {
         .sub-title {
             justify-content: center;
+        }
+    }
+    &.style-white {
+        .sub-title {
+            color: var(--White);
+            border-color: #FFFFFF1A;
+            &::before {
+                background-color: var(--White);
+            }
+        }
+        .title {
+            color: var(--White);
         }
     }
     @include res(md) {
@@ -303,11 +314,138 @@
     }
 }
 
+.box-service {
+    border-radius: 20px;
+    background-color: var(--White);
+    .image {
+        position: relative;
+        padding: 10px 10px 0;
+        .img-style {
+            border-radius: 14px;
+        }
+        .icon {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,50%);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--Red);
+        }
+    }
+    .content {
+        padding: 70px 40px 39px;
+        text-align: center;
+        .title {
+            font-family: $font-Inter-Tight;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: var(--Title);
+            margin-bottom: 25px;
+        }
+        .line-space {
+            display: flex;
+            height: 1px;
+            width: 100%;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(0, 8, 20, 0.3) 0%, rgba(0, 8, 20, 0) 100%);
+            margin-bottom: 25px;
+        }
+        .text {
+            margin-bottom: 30px;
+        }
+    }
+}
 
+ul.list-text {
+    li {
+        position: relative;
+        padding-left: 15px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: var(--Red);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
 
-
-
-
+.works-item {
+    position: relative;
+    padding: 30px 26px;
+    text-align: center;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        border: 1px solid #F3F3F3;
+        margin-top: -135px;
+        margin-left: -135px;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(0, 8, 20, 0) 0%, rgba(0, 8, 20, 0.05) 100%);
+        @include transition3();
+        z-index: -1;
+    }
+    .num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: var(--White);
+        box-shadow: 10px 4px 60px 0px #8D8D8D40;
+        margin: 0 auto 20px;
+        font-family: $font-Inter-Tight;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        border-radius: 50%;
+    }
+    .title {
+        font-family: $font-Inter-Tight;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        color: var(--Title);
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 14px;
+        background-color: var(--White);
+        color: var(--Red);
+        margin: 0 auto 20px;
+        font-size: 30px;
+        margin-bottom: 25px;
+        box-shadow: 10px 4px 60px 0px #9E9E9E40;
+        @include transition3();
+    }
+    &:hover {
+        .icon {
+            color: var(--White);
+            background-color: var(--Red);
+        }
+        &::before {
+            transform: rotate(180deg) ;
+        }
+    }
+}
 
 
 

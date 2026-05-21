@@ -51,12 +51,28 @@
             }
         }
     }
+    &.btn-bg-white-2 {
+        background-color: var(--White);
+        border: 1px solid #0008141A;
+        span {
+            color: var(--Title);
+        }
+        .bg-effect {
+            background-color: var(--Red);
+        }
+        &:hover {
+            background-color: var(--Red);
+            span {
+                color: var(--White) !important;
+            }
+        }
+    }
     &.btn-px-12 {
         // padding: 0 12px;
     }
     &:hover {
         transition-delay: 0.15s;
-        background-color: var(--Text-primary);
+        // background-color: var(--Text-primary);
         span {
             color: var(--White) !important;
         }

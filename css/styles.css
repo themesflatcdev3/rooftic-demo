@@ -861,6 +861,9 @@ a:focus, a:hover {
 .tf-container.w-1780 {
   max-width: 1810px;
 }
+.tf-container.w-1748 {
+  max-width: 1778px;
+}
 
 .slider-layout-right {
   width: calc(100vw - (100vw - 1320px) / 2) !important;
@@ -1516,6 +1519,12 @@ a:focus, a:hover {
 .text-gradient-1 {
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1019607843);
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px rgba(0, 8, 20, 0.1490196078);
   -webkit-text-fill-color: transparent;
 }
 
@@ -2521,9 +2530,24 @@ a:focus, a:hover {
 .tf-btn.btn-bg-white:hover span {
   color: var(--White) !important;
 }
+.tf-btn.btn-bg-white-2 {
+  background-color: var(--White);
+  border: 1px solid rgba(0, 8, 20, 0.1019607843);
+}
+.tf-btn.btn-bg-white-2 span {
+  color: var(--Title);
+}
+.tf-btn.btn-bg-white-2 .bg-effect {
+  background-color: var(--Red);
+}
+.tf-btn.btn-bg-white-2:hover {
+  background-color: var(--Red);
+}
+.tf-btn.btn-bg-white-2:hover span {
+  color: var(--White) !important;
+}
 .tf-btn:hover {
   transition-delay: 0.15s;
-  background-color: var(--Text-primary);
 }
 .tf-btn:hover span {
   color: var(--White) !important;
@@ -4668,12 +4692,11 @@ form.form-search-siderbar .tf-btn-search i {
   display: flex;
   align-items: center;
 }
-.wrap-infiniteslide.style-1 {
-  padding: 40px 0 39px;
-  border-bottom: 1px solid rgba(0, 8, 20, 0.0705882353);
+.wrap-infiniteslide .infiniteslide.style-1 {
+  gap: 100px;
 }
-.wrap-infiniteslide.style-1 .infiniteslide {
-  gap: 70px;
+.wrap-infiniteslide .infiniteslide.style-2 {
+  gap: 100px;
 }
 
 .marquee-type-1 {
@@ -4737,6 +4760,16 @@ form.form-search-siderbar .tf-btn-search i {
 }
 .heading-section.text-center .sub-title {
   justify-content: center;
+}
+.heading-section.style-white .sub-title {
+  color: var(--White);
+  border-color: rgba(255, 255, 255, 0.1019607843);
+}
+.heading-section.style-white .sub-title::before {
+  background-color: var(--White);
+}
+.heading-section.style-white .title {
+  color: var(--White);
 }
 @media (max-width: 767px) {
   .heading-section {
@@ -4962,6 +4995,143 @@ form.form-search-siderbar .tf-btn-search i {
   background-color: var(--White);
 }
 
+.box-service {
+  border-radius: 20px;
+  background-color: var(--White);
+}
+.box-service .image {
+  position: relative;
+  padding: 10px 10px 0;
+}
+.box-service .image .img-style {
+  border-radius: 14px;
+}
+.box-service .image .icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--Red);
+}
+.box-service .content {
+  padding: 70px 40px 39px;
+  text-align: center;
+}
+.box-service .content .title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--Title);
+  margin-bottom: 25px;
+}
+.box-service .content .line-space {
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 8, 20, 0.3) 0%, rgba(0, 8, 20, 0) 100%);
+  margin-bottom: 25px;
+}
+.box-service .content .text {
+  margin-bottom: 30px;
+}
+
+ul.list-text li {
+  position: relative;
+  padding-left: 15px;
+}
+ul.list-text li::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--Red);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.works-item {
+  position: relative;
+  padding: 30px 26px;
+  text-align: center;
+}
+.works-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  border: 1px solid #F3F3F3;
+  margin-top: -135px;
+  margin-left: -135px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(0, 8, 20, 0) 0%, rgba(0, 8, 20, 0.05) 100%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.works-item .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--White);
+  box-shadow: 10px 4px 60px 0px rgba(141, 141, 141, 0.2509803922);
+  margin: 0 auto 20px;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 50%;
+}
+.works-item .title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: var(--Title);
+}
+.works-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  background-color: var(--White);
+  color: var(--Red);
+  margin: 0 auto 20px;
+  font-size: 30px;
+  margin-bottom: 25px;
+  box-shadow: 10px 4px 60px 0px rgba(158, 158, 158, 0.2509803922);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.works-item:hover .icon {
+  color: var(--White);
+  background-color: var(--Red);
+}
+.works-item:hover::before {
+  transform: rotate(180deg);
+}
+
 /*------------ sections ---------------- */
 /* ---------------------------------------------------------
     * Name: Domira - Real Estate HTML Template
@@ -5136,6 +5306,19 @@ form.form-search-siderbar .tf-btn-search i {
 .section-about-us .wrap-image {
   width: 57.364%;
 }
+.section-about-us .clients {
+  padding: 30px;
+  border-radius: 14px;
+  background-color: var(--Red);
+}
+.section-about-us .clients .num {
+  color: var(--White);
+  margin-bottom: 5px;
+}
+.section-about-us .clients .text {
+  color: var(--White);
+  margin-bottom: 25px;
+}
 .section-about-us .about-image {
   width: 100%;
   border-radius: 14px;
@@ -5144,6 +5327,119 @@ form.form-search-siderbar .tf-btn-search i {
 .section-about-us .bottom {
   display: flex;
   gap: 70px;
+  align-items: center;
+}
+.section-about-us .mission-vission {
+  margin-bottom: 50px;
+}
+.section-about-us .mission-vission .nav-menu {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 33px;
+}
+.section-about-us .mission-vission .nav-tab-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--Paragraph);
+  padding-bottom: 20px;
+}
+.section-about-us .wrap-content {
+  border-top: 1px solid rgba(0, 8, 20, 0.1019607843);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  position: relative;
+}
+.section-about-us .wrap-content::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  background-color: rgba(0, 8, 20, 0.1019607843);
+}
+.section-about-us .box-icon {
+  max-width: 252px;
+}
+.section-about-us .box-icon .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  background-color: var(--Red);
+  margin-bottom: 30px;
+}
+.section-about-us .box-icon .title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  color: var(--Paragraph);
+}
+
+.section-services {
+  background-color: var(--Black);
+  background-image: url(./../images/services/bg-services.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-works .wrap-infiniteslide {
+  margin-bottom: 100px;
+}
+.section-works .wrap-infiniteslide .text {
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 73px;
+  text-transform: uppercase;
+  font-family: "Inter Tight", sans-serif;
+}
+.section-works .top {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.section-works .top .content {
+  width: 34.88372%;
+}
+.section-works .top .content .heading-section {
+  margin-bottom: 30px;
+}
+.section-works .top .content .text {
+  margin-bottom: 25px;
+}
+.section-works .top .image {
+  width: 48.8372%;
+}
+.section-works .top .image img {
+  border-radius: 20px;
+}
+.section-works .top .list-text {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+.section-works .wrap-works {
+  border: 1px solid rgba(0, 8, 20, 0.0705882353);
+  border-radius: 20px;
+  display: flex;
+}
+.section-works .wrap-works > *:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(0, 8, 20, 0.0705882353);
 }
 
 /*# sourceMappingURL=styles.css.map */
