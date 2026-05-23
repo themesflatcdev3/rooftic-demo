@@ -5132,6 +5132,16 @@ ul.list-text li::before {
   transform: rotate(180deg);
 }
 
+.curve-box .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--Black);
+  border-radius: 50%;
+}
+
 /*------------ sections ---------------- */
 /* ---------------------------------------------------------
     * Name: Domira - Real Estate HTML Template
