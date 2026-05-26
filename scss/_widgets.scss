@@ -488,7 +488,20 @@ ul.list-text {
         z-index: 2;
     }
     &.style-2 {
-        
+        width: 186px;
+        height: 186px;
+        .circle-icon {
+            width: 115px;
+            height: 115px;
+            background-color: var(--Red);
+        }
+        .circle-text text {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 500;
+            fill: var(--White);
+            letter-spacing: 0;
+        }
     }
 }
 
@@ -501,7 +514,23 @@ ul.list-text {
     }
 }
 
-
+.counter-item {
+    text-align: center;
+    .counter-number {
+        font-family: $font-Inter-Tight;
+        font-weight: 500;
+        font-size: 85px;
+        line-height: 103px;
+        margin-bottom: 20px;
+        color: var(--White);
+    }
+    .text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--White);
+    }
+}
 
 
 

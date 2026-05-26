@@ -5170,6 +5170,23 @@ ul.list-text li::before {
   font-size: 38px;
   z-index: 2;
 }
+.circle-badge.style-2 {
+  width: 186px;
+  height: 186px;
+}
+.circle-badge.style-2 .circle-icon {
+  width: 115px;
+  height: 115px;
+  background-color: var(--Red);
+}
+.circle-badge.style-2 .circle-text text {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  fill: var(--White);
+  letter-spacing: 0;
+}
+
 @keyframes rotateText {
   from {
     transform: rotate(0deg);
@@ -5178,6 +5195,24 @@ ul.list-text li::before {
     transform: rotate(360deg);
   }
 }
+.counter-item {
+  text-align: center;
+}
+.counter-item .counter-number {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 85px;
+  line-height: 103px;
+  margin-bottom: 20px;
+  color: var(--White);
+}
+.counter-item .text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--White);
+}
+
 /*------------ sections ---------------- */
 /* ---------------------------------------------------------
     * Name: Roofixo - Roofing Service HTML Template
@@ -5489,7 +5524,70 @@ ul.list-text li::before {
 }
 
 .section-cta-funfact .cta-wrap {
+  position: relative;
   padding: 100px 0;
+  border-radius: 20px 20px 0 0;
+}
+.section-cta-funfact .cta-wrap::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 8, 20, 0.6) 0%, rgba(0, 8, 20, 0) 68.3%);
+  border-radius: 20px 20px 0 0;
+}
+.section-cta-funfact .cta-content .heading-section {
+  margin-bottom: 30px;
+}
+.section-cta-funfact .cta-content .text {
+  color: var(--White);
+  margin-bottom: 30px;
+}
+.section-cta-funfact .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-cta-funfact .right {
+  position: absolute;
+  bottom: 0;
+  right: 169px;
+}
+.section-cta-funfact .right::before {
+  position: absolute;
+  content: "";
+  width: 572px;
+  height: 572px;
+  border-radius: 50%;
+  background-color: var(--Red);
+  filter: blur(100px);
+  z-index: 0;
+  bottom: -30px;
+}
+.section-cta-funfact .right img {
+  position: relative;
+  z-index: 1;
+}
+.section-cta-funfact .funfact-wrap {
+  position: relative;
+  padding: 70px 100px;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  display: flex;
+  gap: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-cta-funfact .funfact-wrap > .image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.section-cta-funfact .funfact-wrap > .image::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(246, 30, 38, 0.8);
 }
 
 /*# sourceMappingURL=styles.css.map */

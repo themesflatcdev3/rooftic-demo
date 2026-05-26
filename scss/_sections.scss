@@ -302,6 +302,71 @@
 
 .section-cta-funfact {
     .cta-wrap {
+        position: relative;
         padding: 100px 0;
+        border-radius: 20px 20px 0 0;
+        &::before {
+            position: absolute;
+            content: '';
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 8, 20, 0.6) 0%, rgba(0, 8, 20, 0) 68.3%);
+            border-radius: 20px 20px 0 0;
+        }
+    }
+    .cta-content {
+        .heading-section {
+            margin-bottom: 30px;
+        }
+        .text {
+            color: var(--White);
+            margin-bottom: 30px;
+        }
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .right {
+        position: absolute;
+        bottom: 0;
+        right: 169px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 572px;
+            height: 572px;
+            border-radius: 50%;
+            background-color: var(--Red);
+            filter: blur(100px);
+            z-index: 0;
+            bottom: -30px;
+        }
+        img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .funfact-wrap {
+        position: relative;
+        padding: 70px 100px;
+        border-radius: 0 0 20px 20px ;
+        overflow: hidden;
+        display: flex;
+        gap: 220px;
+        justify-content: space-between;
+        align-items: center;
+        >.image {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            &::after {
+                position: absolute;
+                content: '';
+                inset: 0;
+                background-color: #F61E26CC;
+            }
+        }
     }
 }
